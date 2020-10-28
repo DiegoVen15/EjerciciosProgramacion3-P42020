@@ -4,7 +4,7 @@
 
 using namespace std;
 
-cuenta::cuenta(){}
+cuenta::cuenta() {}
 
 cuenta::cuenta(float saldoBase) {
 	if (saldoBase < 0) std::cout << "Saldo Inicial no valido";
