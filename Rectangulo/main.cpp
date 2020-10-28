@@ -14,11 +14,10 @@ int main()
 	Rectangulo rec1;
 	Rectangulo rec2(4, 1);
 
-	rec1.setBase(6);
-	rec1.setAltura(3);
-
-	cout << "Rectangulo { base: " << rec1.getBase() << ", altura: " << rec1.getAltura()
-		<< ", area: " << rec1.getArea() << ", perimetro: " << rec1.getPerimetro() << " }\n";
+	Rectangulo establecer(1, 1, 1, 2, 2, 1, 2, 2);
+	cout << ""
+	Rectangulo cuadrado(1, 1, 1, 2, 2, 1, 2, 2);
+		
 
 	_getch();
 }

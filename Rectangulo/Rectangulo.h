@@ -19,7 +19,7 @@ public:
 	int getPerimetro();
 
 	void establecer(int, int, int, int, int, int, int, int);
-	void cuadrado();
+	void cuadrado(int, int, int, int, int, int, int, int);
 
 
 private:
