@@ -19,7 +19,7 @@ public:
 
 	float getAbono();
 	float getRetiro();
-	void imprimirSaldo();
+	void obtenerSaldo();
 	void miembroAbonar(float);
 	void miembroCargar(float);
 };

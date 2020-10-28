@@ -5,9 +5,6 @@
 
 using std::cout;
 
-class foo
-{};
-
 int main()
 {
 
@@ -15,7 +12,6 @@ int main()
 	Rectangulo rec2(4, 1);
 
 	Rectangulo establecer(1, 1, 1, 2, 2, 1, 2, 2);
-	cout << ""
 	Rectangulo cuadrado(1, 1, 1, 2, 2, 1, 2, 2);
 		
 

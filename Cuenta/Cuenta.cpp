@@ -24,7 +24,7 @@ float cuenta::getAbono() {
 float cuenta::getRetiro() {
 	return this->retiro;
 }
-void cuenta::imprimirSaldo() {
+void cuenta::obtenerSaldo() {
 	cout << "Saldo en la cuenta: " << getSaldo << std::endl;
 }
 
