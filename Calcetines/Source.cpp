@@ -16,9 +16,17 @@ int main() {
 
 void calcCont(int array[]) {
 
-	int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0;
+	int cont1 = 0;
+	int cont2 = 0;
+	int cont3 = 0;
+	int cont4 = 0;
+	int cont5 = 0;
 
-	int par1 = 0, par2 = 0, par3 = 0, par4 = 0, par5 = 0;
+	int par1 = 0;
+	int par2 = 0;
+	int par3 = 0;
+	int par4 = 0;
+	int par5 = 0;
 
 	//valor i 100 para que aun cambiando el numero de valores del array no de error
 	for (int i = 0; i < 100; i++) {
