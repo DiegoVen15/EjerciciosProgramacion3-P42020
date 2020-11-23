@@ -28,8 +28,8 @@ void calcCont(int array[]) {
 	int par4 = 0;
 	int par5 = 0;
 
-	//valor i < 100 para que aun cambiando el numero de valores del array no de error
 	for (int i = 0; i < 100; i++) {
+		//valor i < 100 para probar que aun cambiando el numero de valores del array no de error
 		if (array[i] == 1) {
 
 			cont1++;
