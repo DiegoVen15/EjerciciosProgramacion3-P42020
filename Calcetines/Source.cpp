@@ -42,6 +42,13 @@ void calcCont(int array[]) {
 			par2 = (cont2/2);
 		}
 
+		if (array[i] == 3) {
+
+			cont3++;
+			par3 = (cont3 / 2);
+
+		}
+
 		if (array[i] == 4) {
 
 			cont4++;
@@ -55,14 +62,6 @@ void calcCont(int array[]) {
 			par5 = (cont5/2);
 
 		}
-
-		if (array[i] == 3) {
-
-			cont3++;
-			par3 = (cont3 / 2);
-
-		}
-
 	}
 
 	cout << "Vector[1, 2, 1, 2, 4, 3, 3, 1, 4, 3, 5, 2, 1, 2, 1, 3, 5, 1, 1], size = 20\n";
