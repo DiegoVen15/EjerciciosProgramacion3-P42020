@@ -28,7 +28,7 @@ void calcCont(int array[]) {
 	int par4 = 0;
 	int par5 = 0;
 
-	//valor i 100 para que aun cambiando el numero de valores del array no de error
+	//valor i < 100 para que aun cambiando el numero de valores del array no de error
 	for (int i = 0; i < 100; i++) {
 		if (array[i] == 1) {
 
