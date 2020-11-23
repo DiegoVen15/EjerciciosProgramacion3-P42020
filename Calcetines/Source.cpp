@@ -45,7 +45,7 @@ void calcCont(int array[]) {
 		if (array[i] == 3) {
 
 			cont3++;
-			par3 = (cont3 / 2);
+			par3 = (cont3/2);
 
 		}
 
