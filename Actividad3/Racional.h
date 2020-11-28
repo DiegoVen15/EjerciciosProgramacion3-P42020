@@ -2,8 +2,13 @@
 
 #ifndef RACIONAL_H
 #define RACIONAL_H
+#include <iostream>
+using namespace std;
 
-class Racional{
+class Racional
+{
+	friend ostream& operator<<(ostream&, const Racional&);
+	friend istream& operator>>(istream&, Racional&);
 
 public:
 	Racional();
@@ -11,6 +16,14 @@ public:
 
 	void imprimirRacional(); // 17/6
 	void imprimirDecimal();  // 2.8333
+
+	bool operator==(const Racional&) const;
+	bool operator!=(const Racional&) const;
+	bool operator>(const Racional&) const;
+	bool operator<(const Racional&) const;
+	bool operator>=(const Racional&) const;
+	bool operator<=(const Racional&) const;
+
 
 	Racional suma(Racional);
 	Racional resta(Racional);

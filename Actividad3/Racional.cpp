@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 
-using std::cout;
+using namespace std;
 
 Racional::Racional() : numerador(1), denominador(1)
 {}
@@ -101,4 +101,32 @@ Racional Racional::potencia(int exponente)
 
 	return Racional(pow(this->numerador, exponente), pow(this->denominador, exponente));
 
+}
+
+bool Racional::operator==(const Racional& r2) const
+{
+	return (numerador == r2.numerador && denominador == r2.denominador);
+}
+
+bool Racional::operator!=(const Racional& r2) const
+{
+	return !(*this == r2);
+}
+
+bool Racional::operator>(const Racional& r2) const
+{
+	return;
+}
+
+ostream& operator<<(std::ostream& out, const Racional& r2)
+{
+	out << '(' << r2.numerador << '/' << r2.denominador << ')';
+
+	return out;
+}
+std::istream& operator>>(istream& in, Racional& r2)
+{
+	in >> r2.numerador >> r2.denominador;
+
+	return in;
 }
