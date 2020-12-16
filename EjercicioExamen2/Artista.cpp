@@ -80,6 +80,8 @@ int Artista::totalMinutosReproduccion() {
 
 		total += al.duracion();
 	}
+
+	return total;
 }
 
 bool Artista::estaVacia() {
