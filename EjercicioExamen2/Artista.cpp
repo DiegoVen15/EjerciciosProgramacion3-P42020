@@ -120,12 +120,24 @@ void Artista::guardarEnArchivo(){
 	Artista ar;
 	Album al;
 	Sencillo s;
+	int contS = 1;
+	int contA = 1;
 	cout << "Artista: " << ar.getNombreArtistico() << "Año de Nacimiento: " << ar.getAnioNacimiento()  << "\n"; 
-	cout << "Album: " << al.getNombreAlbum() << "Año de Lanzamiento " << al.getAnioPublicacion() << "Genero: " << al.getGenero() << "\n";
-	cout << "Cancion 1: " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
-	cout << "Cancion 2: " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
-	cout << "Cancion 3: " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
-
+	cout << "Album" << contA << ": " << al.getNombreAlbum() << "Año de Lanzamiento " << al.getAnioPublicacion() << "Genero: " << al.getGenero() << "\n";
+	cout << "Cancion " << contS << ": " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
+	if (s.getSiguienteSencillo() != nullptr) {
+		contS++;
+		cout << "Cancion "<< contS << ": " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
+	}
+	if (al.getSiguienteAlbum() != nullptr) {
+		contS = 1;
+		cout << "Album" << contA << ": " << al.getNombreAlbum() << "Año de Lanzamiento " << al.getAnioPublicacion() << "Genero: " << al.getGenero() << "\n";
+		cout << "Cancion " << contS << ": " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
+		if (s.getSiguienteSencillo() != nullptr) {
+			contS++;
+			cout << "Cancion " << contS << ": " << s.getNombreCancion() << "Duracion : " << s.getDuracion() << "\n";
+		}
+	}
 	archivoArtista.close();
 }
 
