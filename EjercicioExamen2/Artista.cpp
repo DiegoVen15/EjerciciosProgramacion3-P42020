@@ -63,7 +63,7 @@ int Artista::cantidadAlbumes() {
 	Artista ar;
 	Album al;
 	int cont = 0;
-	if (al.getSiguienteAlbum() != nullptr) {
+	while(al.getSiguienteAlbum() != nullptr) {
 
 		cont++;
 	}
@@ -76,7 +76,7 @@ int Artista::totalMinutosReproduccion() {
 	Artista ar;
 	Album al;
 	int total = 0;
-	if (al.getSiguienteAlbum() != nullptr) {
+	while(al.getSiguienteAlbum() != nullptr) {
 
 		total += al.duracion();
 	}

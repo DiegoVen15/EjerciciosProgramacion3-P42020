@@ -60,7 +60,7 @@ int Album::duracion() {
 	int total = 0;
 	Sencillo s;
 	int cont = 0;
-	if (s.getSiguienteSencillo() != nullptr) {
+	while(s.getSiguienteSencillo() != nullptr) {
 
 		total += s.getDuracion();
 	}
@@ -73,8 +73,8 @@ int Album::cantidadSencillos() {
 	Sencillo s;
 
 	int cont;
-	if (s.getSiguienteSencillo() != nullptr) {
-		cont++
+	while(s.getSiguienteSencillo() != nullptr) {
+		cont++;
 	}
 	total = cont;
 	return total;
@@ -101,7 +101,7 @@ void Album::agregarSencillo(char* nombreCancion1, int duracion1, Sencillo* sigui
 			actual = actual->getSiguienteSencillo();
 		}
 
-		actual->getSiguienteSencillo(nuevo);
+		actual->setSiguienteSencillo(nuevo);
 		sencilloCont++;
 	}
 }
