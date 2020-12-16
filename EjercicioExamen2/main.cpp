@@ -1,5 +1,6 @@
 #include <conio.h>
 #include "Artista.h"
+using namespace std;
 
 int main()
 {
@@ -23,9 +24,10 @@ int main()
 	s.setNombreCancion("Azul");
 	s.setDuracion(4);
 
-	a.totalMinutosReproduccion();
-	a.cantidadAlbumes();
-	a.totalSencillos();
+	cout << a.totalMinutosReproduccion() << "\n";
+	cout << a.cantidadAlbumes() << "\n";
+	cout << a.totalSencillos() << "\n"
+
 	a.guardarEnArchivo();
 	_getch();
 }
